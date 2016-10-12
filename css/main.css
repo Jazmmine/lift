@@ -43,19 +43,11 @@
     position: relative;
     top: 86vw;
   }
-}
-
-  /*
-para botones:
-
-
-
-para titulo h1:
+  #titulo{
     position: relative;
-    top: 9vw;
-
-*/
-
+    top: 9vw;  	
+  }
+}
 
 /*singup*/
 #icono_atras{
