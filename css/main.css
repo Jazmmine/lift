@@ -67,8 +67,10 @@
 
   #btn-next{
     font-size: 4vw;
-    width: 100vh;
+    width: 63vh;
     background-color: #EA0B8C;
+    position: relative;
+    top: 29vh;
 	}
 }
 
