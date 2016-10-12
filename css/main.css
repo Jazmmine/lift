@@ -3,13 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 #contenedor{
 	background-image: url("../img/fondo_index.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 740px;
+	height: 100%;
     overflow: overlay;
 }
 
@@ -18,3 +17,20 @@
     height: 160px;
     width: 250px;
 }
+#seccion-botones{
+	margin-top: 444px;
+}
+
+#boton_login{
+	background: none;
+    border: 2px solid;
+}
+
+#boton_signup{
+	background-image: url("../img/fondo_singup.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+    overflow: overlay;
+}
+
