@@ -64,6 +64,12 @@
     position: relative;
     top: 86vw;
   }
+#icono_atras{
+    cursor: pointer;
+    position: relative;
+    right: 20px;
+    top: 7px;
+}
 
   #titulo{
     position: relative;
