@@ -47,10 +47,16 @@
 	border-top: 2px solid gray;
 }
 
+#contenedor-btnNext{
+	position: relative;
+}
+
 #btn-next{
-	font-size: 2vw;
-	width: 200vh;
-	background-color: #EA0B8C;
+    position: absolute;
+    bottom: -448px;
+    font-size: 2vw;
+    width: 100%;
+    background-color: #EA0B8C;
 }
 
 /*media queries*/
@@ -66,12 +72,11 @@
   }
 
   #btn-next{
-    font-size: 6vw;
-    width: 64vh;
+    position: absolute;
+    bottom: -340px;
+    font-size: 7vw;
+    width: 100%;
     background-color: #EA0B8C;
-    position: relative;
-    top: 29vh;
-	}
 }
 
 /*
