@@ -3,14 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-#contenedor{
+/*index*/
+#fondo_principal{
 	background-image: url("../img/fondo_index.jpg");
 	background-size: cover;
-	background-position: center;
 	background-repeat: no-repeat;
-	height: 100%;
-    overflow: overlay;
-}
+	}
 
 #logo{
 	margin-top: 69px;
@@ -18,7 +16,9 @@
     width: 250px;
 }
 #seccion-botones{
-	margin-top: 444px;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
 }
 
 #boton_login{
@@ -34,3 +34,8 @@
     overflow: overlay;
 }
 
+/*singup*/
+#icono_atras{
+	font-size: 6em;
+	cursor: pointer;
+}
