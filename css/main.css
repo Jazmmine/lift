@@ -7,14 +7,18 @@
 #fondo_principal{
 	background-image: url("../img/fondo_index.jpg");
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
+	height: 100vh;
+    overflow: overlay;
 	}
 
 #logo{
-	margin-top: 69px;
-    height: 160px;
-    width: 250px;
+    width: 20%;
 }
+
+/*
+
 #seccion-botones{
 	position: absolute;
 	bottom: 20px;
@@ -32,7 +36,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
     overflow: overlay;
-}
+}*/
 
 /*singup*/
 #icono_atras{
