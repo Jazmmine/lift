@@ -21,17 +21,11 @@
     position: relative;
     top: 32vw;
 }
-/*
-
-#seccion-botones{
-	position: absolute;
-	bottom: 20px;
-	width: 100%;
-}
 
 #boton_login{
 	background: none;
     border: 2px solid;
+    border-radius: 10px;
 }
 
 #boton_signup{
@@ -40,7 +34,28 @@
 	background-position: center;
 	background-repeat: no-repeat;
     overflow: overlay;
-}*/
+    border-radius: 10px;
+}	
+
+/*media queries*/
+@media screen and (max-width:600px) {
+    #contenedor-botones {
+    position: relative;
+    top: 86vw;
+  }
+}
+
+  /*
+para botones:
+
+
+
+para titulo h1:
+    position: relative;
+    top: 9vw;
+
+*/
+
 
 /*singup*/
 #icono_atras{
