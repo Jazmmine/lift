@@ -7,9 +7,12 @@
 
     function teclas(evento){
     	var ascii = evento.keyCode;
-    	if (ascii == 8 || (ascii >= 48 && ascii <= 57)) {
+    	if (ascii != null || ascii == 8 || (ascii >= 48 && ascii <= 57)) {
     		return true;
     	}else{
+    		//alert("ingresa tu numero celular");
+    		//deshabilita el boton
+    		$("#btn-next").removeAttr("disabled");
     		return false;
     	}
     }	
@@ -24,9 +27,15 @@
     }
 
     function generarCodigo(evento){
-    	var numeroRandom = Math.round(Math.random()*899)+100;
-    	var codigoLetra = "LAB-";
-    	var codigoCompleto = codigoLetra + numeroRandom;
-    		alert(codigoCompleto);
+    	var longitudNumeroCelu = document.getElementById("celular-numero").value;
+    	if (longitudNumeroCelu.length == 9) {
+	    	var numeroRandom = Math.round(Math.random()*899)+100;
+	    	var codigoLetra = "LAB-";
+	    	var codigoCompleto = codigoLetra + numeroRandom;
+	    		alert(codigoCompleto);
+    	}else{
+    		alert("Completar numero de telefono");
+    	}
+
     }
   });
