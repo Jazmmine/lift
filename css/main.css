@@ -24,8 +24,8 @@
 
 #boton_login{
 	background: none;
-    border: 2px solid;
-    border-radius: 10px;
+  border: 2px solid;
+  border-radius: 10px;
 }
 
 #boton_signup{
@@ -58,7 +58,26 @@
     background-color: #EA0B8C;
 }
 
+/*codigo.html*/
+.codigo{
+  width: 20% !important;
+}
+
+#resend_code{
+  background: none;
+  border: 2px solid gray;
+  border-radius: 10px;
+  color: black;
+}
+
+
+/*centrar y alargar boton
+      display: flex;
+    align-items: center;
+    justify-content: center;
+*/
 /*Alertas de Error*/
+/*
 .input-box {
   position: relative;
 }
@@ -130,7 +149,7 @@
 }
 .hidden{
   display: none;
-}
+}*/
 
 /*media queries*/
 @media screen and (max-width:600px) {

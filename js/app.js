@@ -14,6 +14,23 @@
     		return false;
     	}
     }	
+/*
+    function teclas(evento){
+        var telefono = evento.currentTarget;
+            console.log(evento.key);
+        var valorTelefono = telefono.value;
+            console.log("-------------:" + valorTelefono);
+        var resultado = parseInt(valorTelefono);
+            console.log(resultado);
+        if (resultado != undefined) {
+            console.log("numero");
+            return true;
+        }else{
+            console.log("letra");
+            return false;
+        }
+        
+    }*/
 
     function longitudNumero(evento){
     	var $longitud = $(this).val().length;
