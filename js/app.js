@@ -35,7 +35,7 @@
     function longitudNumero(evento){
     	var $longitud = $(this).val().length;
     	if ($longitud == 9) {
-    		$("#btn-next").attr("href", "codigo.html");
+    		$("#btn-next").attr("href", "usuario.html");
     	}else{
     		$("#btn-next").removeAttr("href");
     	}
