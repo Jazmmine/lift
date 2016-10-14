@@ -40,7 +40,7 @@
 /*singup*/
 #icono_atras{
 	font-size: 8vw;
-	cursor: pointer;
+  color: black;
 }
 
 #contenedor-ingresetelefono{
@@ -56,6 +56,80 @@
     font-size: 2vw;
     width: 100%;
     background-color: #EA0B8C;
+}
+
+/*Alertas de Error*/
+.input-box {
+  position: relative;
+}
+
+.inputs-form {
+  padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    margin: 16px auto;
+    display: block;
+    height: 25px;
+}
+#textarea-form{
+  padding: 7px;
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    margin: 16px auto;
+    display: block;
+}
+#boton {
+  background: rgba(3, 107, 158, 0.90);
+    color: white;
+    padding: 14px 21px;
+    width: 240px;
+    margin: 12px auto;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+  font-family: "Arial";
+
+}
+#titulo-form-contacto {
+  color: white;
+    font-size: 44px;
+}
+.mostrar{
+  display: block;
+  background-color: rgba(51,51,51,0.8);
+  padding: 5px;
+  position: absolute;
+  left: 88%;
+  top: 8px;
+  width: 200px;
+  color: white;
+}
+.ocultar{
+  display: none;
+  background-color: rgba(51,51,51,0.8);
+  padding: 5px;
+  position: absolute;
+  left: 88%;
+  top: 8px;
+  width: 200px;
+  color: white;
+}
+.input-box span:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid rgba(51,51,51,0.8);
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
+.hidden{
+  display: none;
 }
 
 /*media queries*/
@@ -83,24 +157,3 @@
     background-color: #EA0B8C;
 }
 
-/*
-.btn, .btn-large,
-.btn-flat {
-  border: none;
-  border-radius: 2px;
-  display: inline-block;
-  height: 36px;
-  line-height: 36px;
-  outline: 0;
-  padding: 0 2rem;
-  text-transform: uppercase;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
-}
-*/
-
-/*
-icono     font-size: 10vh;
-h2     font-size: 12vw;
-
-*/
