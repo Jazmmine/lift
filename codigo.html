@@ -22,7 +22,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col s11 offset-s1 ">
+			<div class="col s12">
 				<p class="center-align">Join now for free ride credit</p>
 			</div>
 		</div>
@@ -30,23 +30,23 @@
 			<div class="container">
 			  <div class="row">
 			    <form class="col s12">
-			      <div class="row s11 offset-s1 center">
+			      <div class="row s1 offset-s1 center">
 			        <div class="input-field col s3">
-			          <input id="primer_codigo" type="text" class="validate codigo">
+			          <input id="primer_codigo" type="text" class="validate codigo" value="LAB-"> <!-- el primer input focus y asi sucesivamente solo un digito // get next que retroceda //y loobvio-->
 			        </div>
-			        <div class="input-field col s3">
+			        <div class="input-field col s3 focus-codigo1">
 			          <input id="segundo_codigo" type="text" class="validate codigo">
 			        </div>	
-			        <div class="input-field col s3">
+			        <div class="input-field col s3 focus-codigo2">
 			          <input id="tercer_codigo" type="text" class="validate codigo">
 			        </div>	
-			        <div class="input-field col s3">
+			        <div class="input-field col s3 ">
 			          <input id="cuarto_codigo" type="text" class="validate codigo">
 			        </div>			        
 			      </div>
 			      <div class="row">
-			      	<div class="col s11 offset-s1">
-			      		<p class="center-align">Enter the code sen to +51 980 945 229</p>
+			      	<div class="col s12">
+			      		<div class="center-align">Enter the code sen to <span id="codigo">+51</span> <p id="fono"></p></div>
 			      	</div>
 			      </div>
 			      <div class="row">
@@ -60,12 +60,12 @@
 		</section>
 		<section  id="contenedor-btnNext">
 			<div class="row">
-				<a class="waves-effect waves-light btn-large center-align" id="btn-next">Next</a>			
+				<a class="waves-effect waves-light btn-large center-align" id="btn-next-codigo" disabled>Next</a>			
 			</div>
 		</section>
 	</div>
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
 	<script type="text/javascript" src="js/materialize.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>	
+	<script type="text/javascript" src="js/codigo.js"></script>	
 </body>
 </html>
