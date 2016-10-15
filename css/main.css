@@ -51,7 +51,7 @@
 	position: relative;
 }
 
-#btn-next, #btn-next-codigo{
+#btn-next, #btn-next-codigo, #btn-next-usuario{
     position: absolute;
     font-size: 2vw;
     width: 100%;

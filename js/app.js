@@ -4,9 +4,8 @@ $(document).ready(function() {
     $("#celular-numero").keyup(longitudNumero);
     $("#btn-next").click(generarCodigo);
 
-    //$("#btn-next-usuario").click(ingresoDatos);
 
-/*singup.html*/
+/*singup.html validando ingreso de solo numero*/
     function teclas(evento){
     	var ascii = evento.keyCode;
     	if (ascii == 8 || (ascii >= 48 && ascii <= 57)) {
@@ -34,6 +33,7 @@ $(document).ready(function() {
         
     }*/
 
+/*singup.html Solo 9 digitos*/
     function longitudNumero(evento){
     	var $longitud = $(this).val().length;
     	if ($longitud == 9) {
@@ -43,7 +43,7 @@ $(document).ready(function() {
     	}
     }
 
-/*Generar y Guardar codigo*/ /*Gurdar valor al ingresar numero de telefono*/
+/*singup.html Generar y Guardar codigo -- Gurdar valor al ingresar numero de telefono*/
     function generarCodigo(){
         var longitudNumeroCelu = $("#celular-numero").val();
     	if (longitudNumeroCelu.length == 9) {
@@ -58,7 +58,7 @@ $(document).ready(function() {
         localStorage.setItem("codigo", numeroRandom);
     }
 
-/*Cargar y mostrar datos*/
+/*Validando usuario.html*/
 
    
   });
