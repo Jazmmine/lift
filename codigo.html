@@ -32,16 +32,16 @@
 			    <form class="col s12">
 			      <div class="row s1 offset-s1 center">
 			        <div class="input-field col s3">
-			          <input id="primer_codigo" type="text" class="validate codigo" value="LAB-"> <!-- el primer input focus y asi sucesivamente solo un digito // get next que retroceda //y loobvio-->
+			          <input id="primer_codigo" type="text" class="validate codigo center" value="LAB-" disabled> <!-- el primer input focus y asi sucesivamente solo un digito // get next que retroceda //y loobvio-->
 			        </div>
-			        <div class="input-field col s3 focus-codigo1">
-			          <input id="segundo_codigo" type="text" class="validate codigo">
+			        <div class="input-field col s3" id="focus-codigo1">
+			          <input id="segundo_codigo" type="text" class="validate codigo center">
 			        </div>	
-			        <div class="input-field col s3 focus-codigo2">
-			          <input id="tercer_codigo" type="text" class="validate codigo">
+			        <div class="input-field col s3" id="focus-codigo2">
+			          <input id="tercer_codigo" type="text" class="validate codigo center">
 			        </div>	
 			        <div class="input-field col s3 ">
-			          <input id="cuarto_codigo" type="text" class="validate codigo">
+			          <input id="cuarto_codigo" type="text" class="validate codigo center">
 			        </div>			        
 			      </div>
 			      <div class="row">
@@ -60,7 +60,8 @@
 		</section>
 		<section  id="contenedor-btnNext">
 			<div class="row">
-				<a class="waves-effect waves-light btn-large center-align" id="btn-next-codigo" disabled>Next</a>			
+				<a class="waves-effect waves-light btn-large center-align" 
+				id="btn-next-codigo" disabled>Next</a>			
 			</div>
 		</section>
 	</div>
