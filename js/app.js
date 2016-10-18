@@ -18,7 +18,6 @@ $(document).ready(function() {
             $("#btn-next").attr("href", "codigo.html");
     		return true;
     	}else{
-            evento.target.blur();
             $("#celular-numero").attr("disabled");
             $("#btn-next").removeAttr("href");
     		return false;
@@ -68,8 +67,11 @@ $(document).ready(function() {
 	    	var codigoLetra = "LAB-";
 	    	var codigoCompleto = codigoLetra + numeroRandom;
             alert(codigoCompleto);
+            $("#btn-next").attr("href", "usuario.html");
     	}else{
     		alert("Completar numero de telefono");
+            $("#celular-numero").attr("disabled");
+            $("#btn-next").removeAttr("href");
     	}
         localStorage.setItem("telefono",longitudNumeroCelu);
         localStorage.setItem("codigo", numeroRandom);
