@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 }
 /*index*/
 #fondo_principal{
@@ -89,17 +90,43 @@
 }
 
 /*perfil.html*/
-#cabecera{
-  background-image: url("../img/fondo_perfil.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: overlay;
-  height: 100px;
-  width: 100%;
-} 
+.botones_perfil{
+    position: absolute;
+    top: 20px;
+    right: 2px;
+}
 
+#btn-edit{
+  margin-left: 22px;
+  padding: 0 1rem;
+}
+#joined-perfil{
+  background-color: rgba(203, 221, 230, 1);
+  border-radius: 5px;
+  padding: 9px 0 9px 0;
+  color: rgba(68, 116, 141, 1);
+}
 
+/*mapa.html*/
+.cabecera-iconos{
+  position: relative;
+  z-index: 100;
+}
+.mapa-iconos{
+  position: absolute;
+}
+.tamaniomapa{
+  height: 100vh;
+  width:100vw;
+}
+.edit-profile{
+  position: absolute;
+  right: 0;
+}
+
+#reorder-perfil{
+  cursor: pointer; 
+}
 
 /*media queries*/
 @media screen and (max-width:600px) {
