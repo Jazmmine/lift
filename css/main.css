@@ -88,6 +88,19 @@
   display: inline-block;
 }
 
+/*perfil.html*/
+#cabecera{
+  background-image: url("../img/fondo_perfil.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: overlay;
+  height: 100px;
+  width: 100%;
+} 
+
+
+
 /*media queries*/
 @media screen and (max-width:600px) {
   #contenedor-botones {
