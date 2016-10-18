@@ -1,7 +1,8 @@
 $(document).ready(function() {
     $("select").material_select(); //materialize
+    $(".button-collapse").sideNav(); //materialize
     $("#celular-numero").keydown(teclas);
-    $("#celular-numero").keyup(longitudNumero);
+ //   $("#celular-numero").keyup(longitudNumero);
     $("#btn-next").click(generarCodigo);
     $("#nombre").keydown(validandoUsuario);
     $("#apellido").keydown(validandoUsuario);
@@ -10,11 +11,16 @@ $(document).ready(function() {
 
 /*singup.html validando ingreso de solo numero*/
     function teclas(evento){
+        var longitud = $(this).val().length;
     	var ascii = evento.keyCode;
-    	if (ascii == 8 || (ascii >= 48 && ascii <= 57)) {
+    	if (ascii == 8 || (ascii >= 48 && ascii <= 57) && longitud <= 8) {
             $("#btn-next").removeAttr("disabled");
+            $("#btn-next").attr("href", "codigo.html");
     		return true;
     	}else{
+            evento.target.blur();
+            $("#celular-numero").attr("disabled");
+            $("#btn-next").removeAttr("href");
     		return false;
     	}
     }	
@@ -37,14 +43,22 @@ $(document).ready(function() {
     }*/
 
 /*singup.html Solo 9 digitos*/
-    function longitudNumero(evento){
-    	var $longitud = $(this).val().length;
-    	if ($longitud == 9) {
+   /* function longitudNumero(evento){
+        console.log(evento.key);
+    	var longitud = $(this).val().length;
+        var ascii = evento.keyCode;
+
+    	if (longitud <= 8 || ascii == 8) {
     		$("#btn-next").attr("href", "codigo.html");
-    	}else{
-    		$("#btn-next").removeAttr("href");
+            return true;
     	}
-    }
+        else if(longitud > 8){
+            evento.target.blur();
+            $("#celular-numero").attr("disabled");
+    		$("#btn-next").removeAttr("href");
+            return false;
+    	}
+    }*/
 
 /*singup.html Generar y Guardar codigo -- Gurdar valor al ingresar numero de telefono*/
     function generarCodigo(){
