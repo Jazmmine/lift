@@ -9,8 +9,10 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body style="background:red">
-	<div class="container" id="contenedor-cabecera-mapa">
+<body>
+
+	<div id="contenedor-cabecera-mapa">
+	<div class="container">
 		<header>
 			<div class="row">
 				<div class="col s3">
@@ -26,7 +28,7 @@
 		</header>
 		<section id="contenedor-pie">
 		  <div class="row">
-    		<form class="col s12">
+    		<form class="col s12" id="formulario-mapa">
       			<div class="row">
         			<div class="input-field col s12">
           				<input placeholder="Ubicaciòn" id="ubicacion" type="text" class="validate">
@@ -34,16 +36,15 @@
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-      					<a class="waves-effect waves-light btn" id="btn-set-pickup">Set pickup</a>
+      					<a class="waves-effect waves-light btn-large" id="btn-set-pickup">Set pickup</a>
         			</div>
       			</div>
     		</form>
 		</section>
 	</div>
-						
-						
-						
-		
+	</div>
+	<div id="mapa"></div>
+
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKv4qogSGg71dtithtNFV9WI791QxzTZU" async defer></script>
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
 	<script type="text/javascript" src="js/materialize.js"></script>

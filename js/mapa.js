@@ -9,9 +9,9 @@ var funcionExito = function(posicion) {
 	var lat = posicion.coords.latitude;
     var lon = posicion.coords.longitude;
     var latlon = new google.maps.LatLng(lat, lon)
-    var mapa = document.getElementById("mapa")
+   /* var mapa = document.getElementById("mapa")
     mapa.style.height = "250px";
-    mapa.style.width = "500px";
+    mapa.style.width = "500px";*/
 
     var myOptions = {
 	    center:latlon,zoom:14,

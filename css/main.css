@@ -108,19 +108,43 @@
 }
 
 /*mapa.html*/
+#mapa{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+
 #contenedor-cabecera-mapa{
   margin-top: 4vh;
+  position: absolute;
+  z-index: 2;
 }
 
 #logo-mapa{
-  width: 16vh;
+  width: 17vw;
 }
 #btn-set-pickup{
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;  
 }
 
+/*
+
+
+#formulario-mapa{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+
+
+
+*/
 /*media queries*/
 @media screen and (max-width:600px) {
   #contenedor-botones {
