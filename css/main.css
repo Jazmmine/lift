@@ -108,17 +108,47 @@
 }
 
 /*mapa.html*/
+#mapa{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+
 #contenedor-cabecera-mapa{
   margin-top: 4vh;
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+}
+#contenedor-iconos{
+    height: 95vh;
+    position: relative;
 }
 
 #logo-mapa{
-  width: 16vh;
+  height: 9vh;
 }
-#btn-set-pickup{
-      display: flex;
+.boton-pickup{
+    display: flex;
     align-items: center;
     justify-content: center;  
+}
+#formulario-mapa{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#sinmargen{
+    margin-left: 0;
+    margin-right: 0;
+}
+.color-blanco {
+  color: white !important;
+}
+.color_negro{
+  color: black !important;
 }
 
 /*media queries*/
