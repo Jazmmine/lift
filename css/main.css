@@ -147,6 +147,10 @@
 .color-blanco {
   color: white !important;
 }
+.color_negro{
+  color: black !important;
+}
+
 /*media queries*/
 @media screen and (max-width:600px) {
   #contenedor-botones {
