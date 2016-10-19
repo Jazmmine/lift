@@ -108,24 +108,17 @@
 }
 
 /*mapa.html*/
-.cabecera-iconos{
-  position: relative;
-  z-index: 100;
-}
-.mapa-iconos{
-  position: absolute;
-}
-.tamaniomapa{
-  height: 100vh;
-  width:100vw;
-}
-.edit-profile{
-  position: absolute;
-  right: 0;
+#contenedor-cabecera-mapa{
+  margin-top: 4vh;
 }
 
-#reorder-perfil{
-  cursor: pointer; 
+#logo-mapa{
+  width: 16vh;
+}
+#btn-set-pickup{
+      display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 
 /*media queries*/

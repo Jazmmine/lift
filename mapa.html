@@ -9,27 +9,41 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-	<div>
+<body style="background:red">
+	<div class="container" id="contenedor-cabecera-mapa">
 		<header>
-			<div class="container cabecera-iconos">
-				<div class="row">
-					<div class="col s4 mapa-iconos">
-						 <i class="large material-icons">perm_identity</i>
-					</div>
-					<div class="col s4 mapa-iconos">
-						<img  id="logo" class="responsive-img" src="img/logo.png">
-					</div>
-					<div class="col s4 mapa-iconos">
-						<i class="large material-icons">start</i>
-					</div>
+			<div class="row">
+				<div class="col s3">
+					<i class=" medium material-icons">person</i>
+				</div>
+				<div class="col s6 center">
+					<img  id="logo-mapa" class="responsive-img" src="img/logo.png">
+				</div>
+				<div class="col s3">
+					<i class="medium material-icons">casino</i>
 				</div>
 			</div>
 		</header>
+		<section id="contenedor-pie">
+		  <div class="row">
+    		<form class="col s12">
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input placeholder="Ubicaciòn" id="ubicacion" type="text" class="validate">
+        			</div>
+      			</div>
+      			<div class="row">
+        			<div class="input-field col s12">
+      					<a class="waves-effect waves-light btn" id="btn-set-pickup">Set pickup</a>
+        			</div>
+      			</div>
+    		</form>
+		</section>
 	</div>
-	<section>
-		<div id="mapa"></div>
-	</section>
+						
+						
+						
+		
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKv4qogSGg71dtithtNFV9WI791QxzTZU" async defer></script>
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
 	<script type="text/javascript" src="js/materialize.js"></script>

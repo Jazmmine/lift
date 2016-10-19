@@ -9,8 +9,9 @@ var funcionExito = function(posicion) {
 	var lat = posicion.coords.latitude;
     var lon = posicion.coords.longitude;
     var latlon = new google.maps.LatLng(lat, lon)
-    $("#mapa").add("tamaniomapa");
-    
+    var mapa = document.getElementById("mapa")
+    mapa.style.height = "250px";
+    mapa.style.width = "500px";
 
     var myOptions = {
 	    center:latlon,zoom:14,
@@ -21,7 +22,7 @@ var funcionExito = function(posicion) {
 	   	}
     };
     
-    var map = new google.maps.Map(document.getElementById('mapa'), myOptions);
+    var map = new google.maps.Map(document.getElementById("mapa"), myOptions);
 
     var marker = new google.maps.Marker({
     	position:latlon,
