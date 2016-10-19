@@ -1,4 +1,11 @@
 var cargarPagina = function() {
+
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: "left", // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
 	if (navigator.geolocation) { 
 		// también se puede usar if ("geolocation" in navigator) {}
 		navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
@@ -36,3 +43,4 @@ var funcionError = function (error) {
 };
 
 $(document).ready(cargarPagina);
+
