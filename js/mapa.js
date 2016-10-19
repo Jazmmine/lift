@@ -6,6 +6,7 @@ var cargarPagina = function() {
       closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
     }
   );
+
 	if (navigator.geolocation) { 
 		// también se puede usar if ("geolocation" in navigator) {}
 		navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
@@ -16,6 +17,7 @@ var funcionExito = function(posicion) {
 	var lat = posicion.coords.latitude;
     var lon = posicion.coords.longitude;
     var latlon = new google.maps.LatLng(lat, lon)
+    $("#ubicacion").val("Latitud: " + lat + "Longitud: " + lon);
    /* var mapa = document.getElementById("mapa")
     mapa.style.height = "250px";
     mapa.style.width = "500px";*/
