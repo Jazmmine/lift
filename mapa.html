@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Mapa</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <img class="background responsive-img" src="img/cities_mapa.jpg">
+      <a href="#!user"><img class="circle responsive-img" src="img/fondo_perfil.jpg"></a>
+      <a href="#!name"><span class="white-text name">Jazmine</span></a>
+      <a href="perfil.html"><span class="white-text email">View profile</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">place</i>Home</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!"><i class="material-icons">redeem</i>Free Rides</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!"><i class="material-icons">restore</i>Ride History</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!"><i class="material-icons">payment</i>Payment</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!"><i class="material-icons">help</i>Help</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
+    <li><a class="boton-pickup waves-effect waves-light btn-large" id="sinmargen"><i class="color-blanco material-icons left">album</i><span class="left">Sign up to drive</span></a></li>
+
+  </ul>
+ <!-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>-->
+
+	<div id="contenedor-cabecera-mapa">
+
+		<div class="container" id="contenedor-iconos">
+			<header>
+				<div class="row">
+					<div class="col s3">
+						<a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons color_negro" id="circulo-persona">account_circle</i></a>
+					</div>
+					<div class="col s6 center">
+						<img  id="logo-mapa" class="responsive-img" src="img/logo.png">
+					</div>
+					<div class="col s3">
+						<i class="medium material-icons">group_work</i>
+					</div>
+				</div>
+			</header>
+			<section id="contenedor-pie">
+			  <div class="row">
+	    		<form class="col s12" id="formulario-mapa">
+	      			<div class="row">
+	        			<div class="input-field col s12">
+	          				<input placeholder="Ubicaciòn" id="ubicacion" type="text" class="validate">
+	        			</div>
+	      			</div>
+	      			<div class="row">
+	        			<div class="input-field col s12">
+	      					<a class="boton-pickup waves-effect waves-light btn-large">Set pickup</a>
+	        			</div>
+	      			</div>
+	    		</form>
+			</section>
+		</div>
+	</div>
+	<div id="mapa"></div>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKv4qogSGg71dtithtNFV9WI791QxzTZU" async defer></script>
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/mapa.js"></script>
+</body>
+</html>
