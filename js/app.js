@@ -58,7 +58,6 @@ $(document).ready(function() {
             return false;
     	}
     }*/
-
 /*singup.html Generar y Guardar codigo -- Gurdar valor al ingresar numero de telefono*/
     function generarCodigo(){
         var longitudNumeroCelu = $("#celular-numero").val();
@@ -67,7 +66,7 @@ $(document).ready(function() {
 	    	var codigoLetra = "LAB-";
 	    	var codigoCompleto = codigoLetra + numeroRandom;
             alert(codigoCompleto);
-            $("#btn-next").attr("href", "usuario.html");
+            $("#btn-next").attr("href", "codigo.html");
     	}else{
     		alert("Completar numero de telefono");
             $("#celular-numero").attr("disabled");
