@@ -156,6 +156,7 @@
     justify-content: center;
   
 }
+
 /*media queries*/
 @media screen and (max-width:600px){
  .titulo-codigo{
