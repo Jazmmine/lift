@@ -58,7 +58,7 @@
   width: 100vw;
 }
 
-#btn-next, #btn-next-codigo, #btn-next-usuario{
+.boton-pickup, #btn-next, #btn-next-codigo, #btn-next-usuario{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,11 +132,7 @@
 #logo-mapa{
   height: 9vh;
 }
-.boton-pickup{
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-}
+
 #formulario-mapa{
   position: absolute;
   bottom: 0;
