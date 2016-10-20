@@ -11,16 +11,17 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
-    overflow: overlay;
-	}
+  overflow: overlay;
+}
 
 #logo{
-    width: 20%;
+  height: 13vh;  
 }
 
 #contenedor-botones{
-    position: relative;
-    top: 32vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 #boton_login{
@@ -34,29 +35,35 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-  overflow: overlay;
   border-radius: 10px;
+ 
 }	
-
+.contenedor-index{
+    height: inherit;
+    position: relative;
+}
 /*singup*/
 #icono_atras{
-	font-size: 8vw;
+	cursor: pointer;
   color: black;
 }
-
-#contenedor-ingresetelefono{
-	border-top: 2px solid gray;
+#seccion-btnNext{
+  position: absolute;
+  top: 1.3vh;
 }
 
-#contenedor-btnNext{
-	position: relative;
+.contenedor-btnNext{
+	position: absolute;
+  bottom: 0;
+  width: 100vw;
 }
 
 #btn-next, #btn-next-codigo, #btn-next-usuario{
-    position: absolute;
-    font-size: 2vw;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #EA0B8C;
+
 }
 
 /*codigo.html*/
@@ -79,7 +86,7 @@
 }
 
 /*centrar y alargar boton
-      display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 */
@@ -151,28 +158,12 @@
   color: black !important;
 }
 
-/*media queries*/
-@media screen and (max-width:600px) {
-  #contenedor-botones {
-    position: relative;
-    top: 86vw;
-  }
-#icono_atras{
-    cursor: pointer;
-    position: relative;
-    right: 20px;
-    top: 7px;
-}
+/*media queries
+@media screen and (max-width:600px) */
 
-  #titulo{
-    position: relative;
-    top: 15vw;  	
-  }
 
-  #btn-next{
-    position: absolute;
-    font-size: 7vw;
-    width: 100%;
-    background-color: #EA0B8C;
-}
+
+ 
+
+
 
