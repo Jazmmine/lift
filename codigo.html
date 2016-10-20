@@ -10,61 +10,51 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div>
-		<div class="container">
-			<div class="row">
-				<div class="col s1">
-					<a href="usuario.html"><i class="material-icons large" id="icono_atras">chevron_left</i></a>
-				</div>
-				<div class="col s11">
-					<h2 class="center-align">Verify phone number</h2>
-				</div>
-			</div>
-		</div>
+	<div class="container">
 		<div class="row">
 			<div class="col s12">
+				<h2 class="titulo-codigo center-align">Verify phone number</h2>
 				<p class="center-align">Join now for free ride credit</p>
 			</div>
 		</div>
-		<section id="contenedor-ingresetelefono">
-			<div class="container">
-			  <div class="row">
-			    <form class="col s12">
-			      <div class="row s1 offset-s1 center">
+	</div>
+	<div class="divider"></div>
+	<section>
+		<div class="container">
+			<form>
+				<div class="row">
 			        <div class="input-field col s3">
-			          <input id="primer_codigo" type="text" class="validate codigo center" value="LAB-" disabled> <!-- el primer input focus y asi sucesivamente solo un digito // get next que retroceda //y loobvio-->
+			          <input id="primer_codigo" type="text" class=" validate center" value="LAB-" disabled> <!-- el primer input focus y asi sucesivamente solo un digito // get next que retroceda //y loobvio-->
 			        </div>
 			        <div class="input-field col s3" id="focus-codigo1">
-			          <input id="segundo_codigo" type="text" class="validate codigo center">
+			          <input id="segundo_codigo" type="text" class="validate center">
 			        </div>	
 			        <div class="input-field col s3" id="focus-codigo2">
-			          <input id="tercer_codigo" type="text" class="validate codigo center">
+			          <input id="tercer_codigo" type="text" class="validate center">
 			        </div>	
-			        <div class="input-field col s3 ">
-			          <input id="cuarto_codigo" type="text" class="validate codigo center">
-			        </div>			        
-			      </div>
-			      <div class="row">
+			        <div class="input-field col s3">
+			          <input id="cuarto_codigo" type="text" class="validate center">
+			        </div>					
+				</div>
+			    <div class="row">
 			      	<div class="col s12">
 			      		<div class="center-align">Enter the code sen to <span id="codigo">+51</span> <p id="fono"></p></div>
 			      	</div>
-			      </div>
-			      <div class="row">
+			    </div>
+			    <div class="row">
 			      	<div class="cols 11 offset-s1 center">
 			      		<a class="waves-effect waves-light btn-large " id="resend_code">Resend Code</a>
 			      	</div>
-			      </div>
-			    </form>
-			  </div>
-			</div>
-		</section>
-		<section  id="contenedor-btnNext">
-			<div class="row">
-				<a class="waves-effect waves-light btn-large center-align" 
-				id="btn-next-codigo" disabled>Next</a>			
-			</div>
-		</section>
-	</div>
+			    </div>
+			</form>
+		</div>		
+	</section>
+	<section id="seccion-atras">
+		<a href="index.html"><i class="material-icons large" id="icono_atras">chevron_left</i></a>
+	</section>
+	<section>
+		<a class="contenedor-btnNext waves-effect waves-light btn-large center-align" disabled  id="btn-next">Next</a>
+	</section>	
 	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script> 
 	<script type="text/javascript" src="js/materialize.js"></script>
 	<script type="text/javascript" src="js/codigo.js"></script>	
