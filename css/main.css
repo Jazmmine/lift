@@ -67,11 +67,6 @@
 }
 
 /*codigo.html*/
-.titulo-codigo{
-  font-size: 10vw;
-}
-
-
 #resend_code{
   background: none;
   border: 2px solid gray;
@@ -159,8 +154,13 @@
   color: black !important;
 }
 
-/*media queries
-@media screen and (max-width:600px) */
+/*media queries*/
+@media screen and (max-width:600px){
+ .titulo-codigo{
+  font-size: 10vw;
+}
+ 
+}
 
 
 
