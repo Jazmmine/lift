@@ -2,12 +2,12 @@ $(document).ready(function() {
     $("select").material_select(); //materialize
     $(".button-collapse").sideNav(); //materialize
     $("#celular-numero").keydown(teclas);
- //   $("#celular-numero").keyup(longitudNumero);
     $("#btn-next").click(generarCodigo);
     $("#nombre").keydown(validandoUsuario);
     $("#apellido").keydown(validandoUsuario);
     $("#mail").keydown(validandoMailCaracteres);
     $("#mail").blur(validandoMail);
+    $(".checkbox-validar").click(checkboxValidar);
 
 /*singup.html validando ingreso de solo numero*/
     function teclas(evento){
@@ -23,41 +23,6 @@ $(document).ready(function() {
     		return false;
     	}
     }	
-/*
-    function teclas(evento){
-        var telefono = evento.currentTarget;
-            console.log(evento.key);
-        var valorTelefono = telefono.value;
-            console.log("-------------:" + valorTelefono);
-        var resultado = parseInt(valorTelefono);
-            console.log(resultado);
-        if (resultado != undefined) {
-            console.log("numero");
-            return true;
-        }else{
-            console.log("letra");
-            return false;
-        }
-        
-    }*/
-
-/*singup.html Solo 9 digitos*/
-   /* function longitudNumero(evento){
-        console.log(evento.key);
-    	var longitud = $(this).val().length;
-        var ascii = evento.keyCode;
-
-    	if (longitud <= 8 || ascii == 8) {
-    		$("#btn-next").attr("href", "codigo.html");
-            return true;
-    	}
-        else if(longitud > 8){
-            evento.target.blur();
-            $("#celular-numero").attr("disabled");
-    		$("#btn-next").removeAttr("href");
-            return false;
-    	}
-    }*/
 /*singup.html Generar y Guardar codigo -- Gurdar valor al ingresar numero de telefono*/
     function generarCodigo(){
         var longitudNumeroCelu = $("#celular-numero").val();
@@ -89,6 +54,7 @@ $(document).ready(function() {
 
         if ((datos.length <= 19 || nAscii == 8) && resultadoValor) {
              console.log(resultadoValor);
+             $("#btn-next-usuario").removeAttr("disabled");
             return true;
         }
         else if (datos.length >= 20) {
@@ -109,6 +75,7 @@ $(document).ready(function() {
         var datos = $(this).val();
 
         if (datos.length <= 49 || nAscii == 8) {
+            $("#btn-next-usuario").removeAttr("disabled");
             return true;
         }
         else if (datos.length >= 50) {
@@ -130,6 +97,16 @@ $(document).ready(function() {
             alert("validar correo");
             return false;
         }        
+    }
+
+    function checkboxValidar(){
+        //console.log($(".checkbox-validar").is(":checked"));
+        if ($(".checkbox-validar").is(":checked")) {
+            $("#btn-next-usuario").removeAttr("disabled");
+            $("#btn-next-usuario").attr("href", "mapa.html");
+        }else{
+            alert("Aceptar terminos y condiciones");
+        }
     }
    
   });
