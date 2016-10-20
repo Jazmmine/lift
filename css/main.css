@@ -58,7 +58,7 @@
   width: 100vw;
 }
 
-.boton-pickup, #btn-next, #btn-next-codigo, #btn-next-usuario{
+#btn-next, #btn-next-codigo, #btn-next-usuario{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -150,6 +150,12 @@
   color: black !important;
 }
 
+.boton-pickup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
 /*media queries*/
 @media screen and (max-width:600px){
  .titulo-codigo{
