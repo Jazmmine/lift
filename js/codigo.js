@@ -11,6 +11,7 @@ $(document).ready(function() {
 	$("#segundo_codigo").keyup(codigoSiguiente);
 	$("#tercer_codigo").keyup(codigoSiguiente);
 	$("#cuarto_codigo").keyup(codigoSiguiente);
+	$("#resend_code").click(reenviarCodigo);
 	$("#btn-next-codigo").click(validarCodigo);
 
 	function codigoValidando(evento){
@@ -51,7 +52,9 @@ $(document).ready(function() {
 			//return true;
 		}
 	}
-
+	function reenviarCodigo(){
+		alert("Su código es: " + codigoRandom);
+	}
 	function validarCodigo(){
 		var segundoInput = $("#segundo_codigo").val();
 		var tercerInput = $("#tercer_codigo").val();
