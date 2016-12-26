@@ -143,6 +143,9 @@
     margin-left: 0;
     margin-right: 0;
 }
+#ubicacion{
+  background-color: #26a69a !important;
+}
 .color-blanco {
   color: white !important;
 }
